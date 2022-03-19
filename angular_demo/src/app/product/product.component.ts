@@ -19,8 +19,26 @@ export class ProductComponent implements OnInit {
       name: 'Iphone',
       description: 'Description iphone',
       price: 1200000
+    },
+    {
+      id: 2,
+      name: 'Iphone 12 pro',
+      description: 'Description iphone',
+      price: 1300000
+    },
+    {
+      id: 3,
+      name: 'Iphone 13 mini',
+      description: 'Description iphone',
+      price: 1400000
+    },
+    {
+      id: 4,
+      name: 'Iphone 14 PRO',
+      description: 'Description iphone',
+      price: 1500000
     }
-  ]
+  ];
   productFilter = this.products;
   newProduct = {
     id: 0,
