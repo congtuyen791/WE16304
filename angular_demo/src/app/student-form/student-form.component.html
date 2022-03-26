@@ -4,11 +4,11 @@
         <form action="" class="form" #studentForm="ngForm" (ngSubmit)="onSubmit(studentForm.value)">
             <div class="form-group">
                 <label for="name">Tên sinh viên</label>
-                <input type="text" id="name" name="name" class="form-control" ngModel>
+                <input type="text" id="name" name="name" class="form-control" [(ngModel)]="student.name">
             </div>
             <div class="form-group">
                 <label for="class">Tên lớp</label>
-                <input type="text" id="class" name="class" class="form-control" ngModel>
+                <input type="text" id="class" name="class" class="form-control" [(ngModel)]="student.class">
             </div>
             <div class="form-group">
                 <button class="btn btn-primary">Thêm mới</button>

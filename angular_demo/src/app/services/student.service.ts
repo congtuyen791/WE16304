@@ -15,7 +15,7 @@ export class StudentService {
     return this.http.get(apiUrl);
   }
 
-  getStudent(id: number | string) {
+  getStudent(id: undefined | string) {
     return this.http.get(`${apiUrl}/${id}`);
     // ~ apiUrl + '/' + id
     // ~ 'http://localhost:3000/students/1'

@@ -1,9 +1,9 @@
 {
   "students": [
     {
-      "id": 1,
       "name": "Vũ Công Tuyền",
-      "class": "WE16304"
+      "class": "WE16304",
+      "id": 1
     },
     {
       "id": 2,
@@ -16,9 +16,9 @@
       "class": "WE16304"
     },
     {
-      "id": 4,
-      "name": "Lê Duy Nam",
-      "class": "WE16304"
+      "name": "Lê Duy Nam12321",
+      "class": "WE16304",
+      "id": 4
     }
   ]
 }
