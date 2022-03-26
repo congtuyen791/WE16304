@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { StudentService } from '../services/student.service';
 
 @Component({
   selector: 'app-student-form',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private studentService: StudentService,
+    private router: Router
+      
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(obj: { name: string, class: string }) {
+    this.studentService.createStudent(obj).subscribe((data) => {
+      this.router.navigate(['/students']);
+    })
   }
 
 }
