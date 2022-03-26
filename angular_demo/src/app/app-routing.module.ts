@@ -1,6 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductComponent } from './product/product.component';
@@ -12,7 +14,7 @@ import { UserComponent } from './user/user.component';
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    component: LayoutComponent
   },
   {
     path: 'product',

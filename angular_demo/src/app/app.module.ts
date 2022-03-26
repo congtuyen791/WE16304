@@ -15,6 +15,10 @@ import { StudentComponent } from './student/student.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { StudentFormComponent } from './student-form/student-form.component';
 import { StudentService } from './services/student.service';
+import { LayoutComponent } from './layout/layout.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { AsideComponent } from './layout/aside/aside.component';
+import { FooterComponent } from './layout/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,11 @@ import { StudentService } from './services/student.service';
     ProductDetailComponent,
     StudentComponent,
     StudentDetailComponent,
-    StudentFormComponent
+    StudentFormComponent,
+    LayoutComponent,
+    HeaderComponent,
+    AsideComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
