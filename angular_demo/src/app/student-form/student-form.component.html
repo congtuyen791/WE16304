@@ -15,11 +15,11 @@
                 <p *ngIf="class.errors?.['required']">Lớp không được để trống</p>
                 <p *ngIf="name.errors?.['minlength']">Tên tối thiểu 6 ký tự</p>
                 <p *ngIf="class.errors?.['maxlength']">Lớp không quá 32 ký tự</p>
-            </div>
+            </div><br>
             <div class="form-group">
                 <button class="btn btn-primary" [disabled]="studentForm.form.invalid" >Submit</button>
+                &nbsp;<a routerLink="/students" class="btn btn-info">Quay lại</a>
             </div>
-            
         </form>
     </div>
 </div>
