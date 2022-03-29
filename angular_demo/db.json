@@ -15,5 +15,25 @@
       "name": "Lê Duy Khánh",
       "class": "WE16304"
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "angular",
+      "content": "noi post code angular",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "title": "PHP",
+      "content": "noi post code PHP",
+      "status": 1
+    },
+    {
+      "title": "1321321",
+      "content": "3123213123213",
+      "status": "0",
+      "id": 3
+    }
   ]
 }

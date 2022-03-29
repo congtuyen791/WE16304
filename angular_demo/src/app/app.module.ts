@@ -19,6 +19,11 @@ import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { AsideComponent } from './layout/aside/aside.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { PostComponent } from './post/post.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import { PostFormComponent } from './post-form/post-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PostService } from './services/post.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,16 +37,20 @@ import { FooterComponent } from './layout/footer/footer.component';
     LayoutComponent,
     HeaderComponent,
     AsideComponent,
-    FooterComponent
+    FooterComponent,
+    PostComponent,
+    PostDetailComponent,
+    PostFormComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
     HttpClientModule
   ],
-  providers: [StudentService],
+  providers: [StudentService, PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
