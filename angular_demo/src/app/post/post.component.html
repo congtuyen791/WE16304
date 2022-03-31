@@ -19,6 +19,7 @@
             <th>{{p.status}}</th>
             <td>
                 <a routerLink="/posts/{{p.id}}" class="btn btn-primary">Chi tiet</a>
+                <a routerLink="/posts/form/{{p.id}}" class="btn btn-warning">Sửa</a>
                 <button class="btn btn-danger" (click)="onDelete(p.id)">Delete</button>
             </td>
         </tr>

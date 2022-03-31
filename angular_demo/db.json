@@ -1,33 +1,48 @@
 {
   "students": [
     {
+      "id": 1,
       "name": "Vũ Công Tuyền",
       "class": "WE16304",
-      "id": 1
+      "status": 1
     },
     {
       "id": 2,
       "name": "Phạm Doãn Nam",
-      "class": "WE16304"
+      "class": "WE16304",
+      "status": 1
     },
     {
       "id": 3,
       "name": "Lê Duy Khánh",
-      "class": "WE16304"
+      "class": "WE16304",
+      "status": 0
+    },
+    {
+      "name": "Lập trình C++12",
+      "class": "we16532",
+      "status": 0,
+      "id": 4
+    },
+    {
+      "name": "adsadasdsad",
+      "class": "adsadsadsadsa",
+      "status": 1,
+      "id": 5
     }
   ],
   "posts": [
     {
-      "id": 1,
-      "title": "angular",
-      "content": "noi post code angular",
-      "status": 1
+      "title": "PHP",
+      "content": "1232132132132",
+      "status": 0,
+      "id": 2
     },
     {
-      "id": 2,
-      "title": "PHP",
-      "content": "noi post code PHP",
-      "status": 1
+      "title": "wqrwe",
+      "content": "rewqwrewrwqr",
+      "status": "1",
+      "id": 3
     }
   ]
 }

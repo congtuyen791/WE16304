@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PostService } from '../services/post.service';
@@ -29,14 +29,17 @@ export class PostFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.activateRoute.snapshot.params['id'];
+    console.log(this.id);
+    
     if (this.id) {
       this.postService.getPost(this.id).subscribe(data => {
-        this.post = data
-      })
+        this.post = data;
+      });
     }else{
       this.post = {
-        name: "",
-        class: ""
+        title: "",
+        content: "",
+        status: 0
       }
     }
   }

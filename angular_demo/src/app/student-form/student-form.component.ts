@@ -25,12 +25,13 @@ export class StudentFormComponent implements OnInit {
     }else{
       this.student = {
         name: "",
-        class: ""
+        class: "",
+        status: 1,
       }
     }
   }
 
-  onSubmit(obj: { name: string, class: string }) {
+  onSubmit(obj: { name: string, class: string , status: number}) {
     if (this.id) {
       return this.studentService.updateStudent(this.id, obj).subscribe((data) => {
         this.router.navigate(['students', this.id]);

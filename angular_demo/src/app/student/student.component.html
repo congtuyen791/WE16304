@@ -7,6 +7,7 @@
             <th>ID</th>
             <th>Name</th>
             <th>Class</th>
+            <th>Status</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -15,6 +16,7 @@
             <th>{{s.id}}</th>
             <th>{{s.name}}</th>
             <th>{{s.class}}</th>
+            <th><app-status-btn [status]="s.status" (changeStatus)="parentChangeStatus($event, s)"></app-status-btn></th>
             <td>
                 <a routerLink="/students/{{s.id}}" class="btn btn-primary">Chi tiet</a>
                 <a routerLink="/students/form/{{s.id}}" class="btn btn-warning">Sửa</a>
